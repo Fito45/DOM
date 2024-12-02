@@ -74,3 +74,51 @@ lista.innerText = "Caldo asado!"
 
 titulo.innerHTML = "Quiero los <span>Pollomones!!</span>";
 lista.innerHTML = `<li>Kiwi</li><li>Cuak</li>`;
+
+
+/*
+
+getAttribute()
+
+Devuelve el valor del elemento que indiquemos
+
+Elemento.getAttribute(atributo)
+
+
+*/
+
+const enlace = document.getElementsByTagName("a");
+
+console.log(enlace[0].getAttribute("href"))
+
+/*
+
+removeAttribute()
+
+Elimina el valor del atributo de un elemento.
+
+    elemento.removeAttribute(atributo)
+
+*/
+
+enlace [0].removeAttribute("href");
+console.log(enlace[0].getAttribute("href"))
+
+/*
+
+setAttribute()
+
+Asigna un atributo y un valor a un elemento.
+
+    elemento.setAttribute(atributo,elemento)
+
+esto nos va a permitir sobreescribir un atributo ya declarado o crear un huevo atributo
+*/
+
+enlace[0].setAttribute("href","https//www.Pollomones.com");
+
+console.log(enlace[0].getAttribute("href"))
+
+enlace[0].setAttribute("target","_blank");
+
+console.log(enlace[0].getAttribute("target"))
