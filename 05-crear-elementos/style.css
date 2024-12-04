@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+.container{
+    background-color: rgb(15, 106, 159);
+    color: aqua;
+    padding: 24px;
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+.subtitulo{
+    margin-bottom: 24px;
+    color: rgb(115, 234, 194);
+}
+
+.list{
+    list-style: none;
+}
+
+.list-item{
+    padding: 12px 8px;
+    color:rgb(223, 255, 246);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.bg-one{
+background-color: rgb(84, 123, 231);
+}
+.bg-two{
+    background-color: rgb(135, 10, 189);
+}
+
+.bg-one-hover{
+    background-color: slateblue;
+}
+.bg-two-hover{
+    background-color: darkviolet;
+}
