@@ -8,11 +8,11 @@ const taskList = document.getElementById('taskList');
 
 addButton.addEventListener('click', createTask);
 
+
 //funcion manejadora externa
 
 function createTask() {
     if (taskInput.value) {
-        console.log(taskInput.value);
 
         const taskItem = document.createElement('div');
         taskItem.classList.add('task')
@@ -45,9 +45,30 @@ function createTask() {
 
         taskList.append(taskItem);
 
+        // Escuchadores de los iconos
+
+        iconCheck.addEventListener('click', (event) => {
+            console.log(event.target.parentNode.parentNode.classList.toggle('complete'));
+        });
+
+        // Definir Escuchador al elemento Icon Delete
+
+        iconDelete.addEventListener('click', (event) => {
+            console.log(event.target.parentNode.parentNode.remove());
+        });
+
         taskInput.value = '';
     } else {
-        alert('eh, escribe una tarea mi judas')
+        alert('eh, escribe una tarea')
     }
 
 }
+
+//Funcion Enter
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        createTask();
+    }
+}
+)
